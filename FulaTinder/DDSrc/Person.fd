@@ -1,0 +1,7 @@
+#REPLACE FILE2 Person
+#REPLACE Person.Recnum |FN2,0
+#REPLACE Person.PersonId |FN2,1
+#REPLACE Person.ForNamn |FS2,2
+#REPLACE Person.EfterNamn |FS2,3
+#REPLACE Person.Alder |FN2,4
+#REPLACE Person.Email |FS2,5

@@ -1,0 +1,4 @@
+#REPLACE FILE1 SysFile
+#REPLACE SysFile.Recnum |FN1,0
+#REPLACE SysFile.PersonId |FN1,1
+#REPLACE SysFile.AttributId |FN1,2

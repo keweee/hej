@@ -1,0 +1,26 @@
+﻿Use DataDict.pkg
+
+Open Person
+
+Class cPersonDataDictionary is a DataDictionary
+    
+    Procedure Construct_Object
+        Forward Send Construct_Object
+        Set Main_File to Person.File_Number
+
+        Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
+        Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
+
+        Set Field_Option Field Person.ForNamn DD_REQUIRED to True
+
+        Set Field_Option Field Person.EfterNamn DD_REQUIRED to True
+
+        Set Field_Option Field Person.Alder DD_REQUIRED to True
+
+        Set Field_Option Field Person.Email DD_REQUIRED to True
+
+    End_Procedure
+
+End_Class
